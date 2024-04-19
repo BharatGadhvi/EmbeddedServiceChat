@@ -1,6 +1,6 @@
 
 <html>
-<style type='text/css'>
+	<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
 		font-family: "Arial", sans-serif;
@@ -35,17 +35,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://qurioustechteamllp-dev-ed.develop.my.salesforce.com',
-			'https://qurioustechteamllp-dev-ed.develop.my.site.com/WebChat',
+			'https://qtechautoportal.my.salesforce.com',
+			'https://qtechautoportal.my.site.com/',
 			gslbBaseURL,
-			'00D5g00000LQMwf',
-			'TestGroup',
+			'00DF9000000djKp',
+			'levelgroup',
 			{
-				baseLiveAgentContentURL: 'https://c.la2-c1-ukb.salesforceliveagent.com/content',
-				deploymentId: '5725g000000grMe',
-				buttonId: '5735g000000gutI',
-				baseLiveAgentURL: 'https://d.la2-c1-ukb.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'TestGroup',
+				baseLiveAgentContentURL: 'https://c.la1-c1-hn3.salesforceliveagent.com/content',
+				deploymentId: '572F9000000k9zy',
+				buttonId: '573F9000000kA0r',
+				baseLiveAgentURL: 'https://d.la1-c1-hn3.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'levelgroup',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -53,7 +53,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://qurioustechteamllp-dev-ed.develop.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://qtechautoportal.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
